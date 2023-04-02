@@ -27,13 +27,14 @@ Please note, When use `deposit(token,amount)` method, you need to set the `allow
 ## 1. set the enviroment  
 going to the folder of the program and running the following instructions in the shell:  
 * 1. create the package.json file: `npm init`
-* 2. install or upgrade the package: `npm install`
-* 3. add the following enviroment variable into `.env` file:  
+  2. install hardhat pachage: 'npm install hardhat --save-dev'
+* 3. install or upgrade the package: `npm install`
+* 4. add the following enviroment variable into `.env` file:  
       1. API_URL = [YOUR_API_URL]   
       2. API_KEY = [YOUR_API_KEY]   
       3. PRIVATE_KEY = [YOUR_PRIVATE_KEY]   
       4. ETHERSCAN_API_KEY = [YOUR_ETHERSCAN_API_KEY]   
-* 4. make sure the version of node.js up to v16.0.0
+* 5. make sure the version of node.js up to v16.0.0
 ## 2. run program  
 * 1. compile the contract with hardhat: `npx hardhat compile`
 * 2. deploy the contract to goerli network with hardhat: `npx hardhat run scripts/deploy.js --network goerli`, and then you get the address of the deployed contract.
