@@ -27,8 +27,8 @@ Please note, When use `deposit(token,amount)` method, you need to set the `allow
 ## 1. set the enviroment  
 going to the folder of the program and running the following instructions in the shell:  
 * 1. create the package.json file: `npm init`
-  2. install hardhat pachage: 'npm install hardhat --save-dev'
-* 3. install or upgrade the package: `npm install`
+* 2. install hardhat pachage: `npm install hardhat --save-dev`  
+* 3. install or upgrade the package: `npm install`  
 * 4. add the following enviroment variable into `.env` file:  
       1. API_URL = [YOUR_API_URL]   
       2. API_KEY = [YOUR_API_KEY]   
