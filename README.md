@@ -36,10 +36,10 @@ going to the folder of the program and running the following instructions in the
 * 3. make sure the version of node.js up to v16.0.0
 ## 2. run program  
 * 1. compile the contract with hardhat: `npx hardhat compile`
-* 2. deploy the contract to the goerli network, and then get the address of the deployed contract.
-	1. deploy the safecontract: `npx hardhat run deploy/deploy_safecontract.js --network goerli`,
-	2. deploy the proxy:`npx hardhat run deploy/deploy_proxy.js --network goerli`
-	3. deploy the safefactory:`npx hardhat run deploy/safefactory.js --network goerli`
+* 2. deploy the contract to the goerli network, and then get the address of the deployed contract.  
+	1. deploy the safecontract: `npx hardhat run deploy/deploy_safecontract.js --network goerli`,  
+	2. deploy the proxy:`npx hardhat run deploy/deploy_proxy.js --network goerli`  
+	3. deploy the safefactory:`npx hardhat run deploy/safefactory.js --network goerli` 
 * 3. verify the contract on the goerli network with hardhat: `npx hardhat verify --network goerli [DEPLOYED_CONTRACT_ADDRESS]` 
 
 ## 3. reference
@@ -48,29 +48,29 @@ going to the folder of the program and running the following instructions in the
 * 3. https://bdaf.notion.site/Lab4-Proxies-Proxies-everywhere-0191cd4bfc0547eaaaae952226fd1ca3
 
 ## 4. gas report and coverage
-### 1.gas report 
-·------------------------------------------|----------------------------|-------------|-----------------------------·
-|           Solc version: 0.8.9            ·  Optimizer enabled: false  ·  Runs: 200  ·  Block limit: 30000000 gas  │
-···········································|····························|·············|······························
-|  Methods                                                                                                          │
-·················|·························|·············|··············|·············|···············|··············
-|  Contract      ·  Method                 ·  Min        ·  Max         ·  Avg        ·  # calls      ·  eur (avg)  │
-
-·················|·························|·············|··············|·············|···············|··············
-|  SafeFactory   ·  deploySafe             ·          -  ·           -  ·     779166  ·            2  ·          -  │
-·················|·························|·············|··············|·············|···············|··············
-|  SafeFactory   ·  deploySafeProxy        ·          -  ·           -  ·     377920  ·            4  ·          -  │
-·················|·························|·············|··············|·············|···············|··············
+### 1.gas report   
+·------------------------------------------|----------------------------|-------------|-----------------------------·  
+|           Solc version: 0.8.9            ·  Optimizer enabled: false  ·  Runs: 200  ·  Block limit: 30000000 gas  │  
+···········································|····························|·············|······························  
+|  Methods                                                                                                          │  
+·················|·························|·············|··············|·············|···············|··············  
+|  Contract      ·  Method                 ·  Min        ·  Max         ·  Avg        ·  # calls      ·  eur (avg)  │  
+·················|·························|·············|··············|·············|···············|··············  
+·················|·························|·············|··············|·············|···············|··············  
+|  SafeFactory   ·  deploySafe             ·          -  ·           -  ·     779166  ·            2  ·          -  │  
+·················|·························|·············|··············|·············|···············|··············  
+|  SafeFactory   ·  deploySafeProxy        ·          -  ·           -  ·     377920  ·            4  ·          -  │  
+·················|·························|·············|··············|·············|···············|··············  
 
 ### 2.coverage 
---------------------|----------|----------|----------|----------|----------------|
-File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
---------------------|----------|----------|----------|----------|----------------|
- contracts/         |    46.15 |    23.08 |    56.86 |    47.71 |                |
-  Token.sol         |       50 |      100 |       50 |       50 |             14 |
-  easy_contract.sol |    25.64 |    16.67 |       40 |    30.19 |... 147,150,151 |
-  lab4.sol          |    67.57 |    28.57 |    68.97 |    64.81 |... 107,110,113 |
---------------------|----------|----------|----------|----------|----------------|
-All files           |    46.15 |    23.08 |    56.86 |    47.71 |                |
---------------------|----------|----------|----------|----------|----------------|
+--------------------|----------|----------|----------|----------|----------------|  
+File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |  
+--------------------|----------|----------|----------|----------|----------------|  
+ contracts/         |    46.15 |    23.08 |    56.86 |    47.71 |                |  
+  Token.sol         |       50 |      100 |       50 |       50 |             14 |  
+  easy_contract.sol |    25.64 |    16.67 |       40 |    30.19 |... 147,150,151 |  
+  lab4.sol          |    67.57 |    28.57 |    68.97 |    64.81 |... 107,110,113 |  
+--------------------|----------|----------|----------|----------|----------------|  
+All files           |    46.15 |    23.08 |    56.86 |    47.71 |                |  
+--------------------|----------|----------|----------|----------|----------------|  
 
