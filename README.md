@@ -26,20 +26,51 @@ Please note, When use `deposit(token,amount)` method, you need to set the `allow
 
 ## 1. set the enviroment  
 going to the folder of the program and running the following instructions in the shell:  
-* 1. create the package.json file: `npm init`
-* 2. install hardhat pachage: `npm install hardhat --save-dev`  
-* 3. install or upgrade the package: `npm install`  
-* 4. add the following enviroment variable into `.env` file:  
+* 1. install or upgrade the package: `npm install`  
+* 2. add the following enviroment variable into `.env` file:  
       1. API_URL = [YOUR_API_URL]   
       2. API_KEY = [YOUR_API_KEY]   
       3. PRIVATE_KEY = [YOUR_PRIVATE_KEY]   
       4. ETHERSCAN_API_KEY = [YOUR_ETHERSCAN_API_KEY]   
-* 5. make sure the version of node.js up to v16.0.0
+      5. PUBLIC_KEY = [YOUR_PUBLIC_KEY]   
+* 3. make sure the version of node.js up to v16.0.0
 ## 2. run program  
 * 1. compile the contract with hardhat: `npx hardhat compile`
-* 2. deploy the contract to goerli network with hardhat: `npx hardhat run scripts/deploy.js --network goerli`, and then you get the address of the deployed contract.
-* 3. verify the contract on the goerli network with hardhat: `npx hardhat verify --network goerli [DEPLOYED_CONTRACT_ADDRESS]`
+* 2. deploy the contract to the goerli network, and then get the address of the deployed contract.
+	1. deploy the safecontract: `npx hardhat run deploy/deploy_safecontract.js --network goerli`,
+	2. deploy the proxy:`npx hardhat run deploy/deploy_proxy.js --network goerli`
+	3. deploy the safefactory:`npx hardhat run deploy/safefactory.js --network goerli`
+* 3. verify the contract on the goerli network with hardhat: `npx hardhat verify --network goerli [DEPLOYED_CONTRACT_ADDRESS]` 
+
 ## 3. reference
 * 1. how to deploy the contract with hardhat: https://docs.alchemy.com/docs/hello-world-smart-contract
 * 2. how to verify the contract with hardhat: https://docs.alchemy.com/docs/submitting-your-smart-contract-to-etherscan
 * 3. https://bdaf.notion.site/Lab4-Proxies-Proxies-everywhere-0191cd4bfc0547eaaaae952226fd1ca3
+
+## 4. gas report and coverage
+### 1.gas report 
+·------------------------------------------|----------------------------|-------------|-----------------------------·
+|           Solc version: 0.8.9            ·  Optimizer enabled: false  ·  Runs: 200  ·  Block limit: 30000000 gas  │
+···········································|····························|·············|······························
+|  Methods                                                                                                          │
+·················|·························|·············|··············|·············|···············|··············
+|  Contract      ·  Method                 ·  Min        ·  Max         ·  Avg        ·  # calls      ·  eur (avg)  │
+
+·················|·························|·············|··············|·············|···············|··············
+|  SafeFactory   ·  deploySafe             ·          -  ·           -  ·     779166  ·            2  ·          -  │
+·················|·························|·············|··············|·············|···············|··············
+|  SafeFactory   ·  deploySafeProxy        ·          -  ·           -  ·     377920  ·            4  ·          -  │
+·················|·························|·············|··············|·············|···············|··············
+
+### 2.coverage 
+--------------------|----------|----------|----------|----------|----------------|
+File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+--------------------|----------|----------|----------|----------|----------------|
+ contracts/         |    46.15 |    23.08 |    56.86 |    47.71 |                |
+  Token.sol         |       50 |      100 |       50 |       50 |             14 |
+  easy_contract.sol |    25.64 |    16.67 |       40 |    30.19 |... 147,150,151 |
+  lab4.sol          |    67.57 |    28.57 |    68.97 |    64.81 |... 107,110,113 |
+--------------------|----------|----------|----------|----------|----------------|
+All files           |    46.15 |    23.08 |    56.86 |    47.71 |                |
+--------------------|----------|----------|----------|----------|----------------|
+

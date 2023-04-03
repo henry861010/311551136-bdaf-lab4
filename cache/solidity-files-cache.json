@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/contracts/Token.sol": {
-      "lastModificationDate": 1680429279367,
+      "lastModificationDate": 1680488142846,
       "contentHash": "c3dd9171d6117e1e1bda0bdd6f992a70",
       "sourceName": "contracts/Token.sol",
       "solcConfig": {
@@ -25,6 +25,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -40,7 +43,7 @@
       ]
     },
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/node_modules/hardhat/console.sol": {
-      "lastModificationDate": 1680429234119,
+      "lastModificationDate": 1680488209368,
       "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
       "sourceName": "hardhat/console.sol",
       "solcConfig": {
@@ -63,6 +66,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -75,7 +81,7 @@
       ]
     },
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1680429890019,
+      "lastModificationDate": 1680488208152,
       "contentHash": "834a0dde221759af42b030253315b086",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -98,6 +104,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -114,7 +123,7 @@
       ]
     },
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1680429889999,
+      "lastModificationDate": 1680488208044,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -137,6 +146,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -149,7 +161,7 @@
       ]
     },
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1680429890079,
+      "lastModificationDate": 1680488208336,
       "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -172,6 +184,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -184,7 +199,7 @@
       ]
     },
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1680429890079,
+      "lastModificationDate": 1680488208336,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -207,6 +222,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -221,7 +239,7 @@
       ]
     },
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/contracts/lab4.sol": {
-      "lastModificationDate": 1680429279371,
+      "lastModificationDate": 1680488142846,
       "contentHash": "d50a2350119154fea23465467cc07700",
       "sourceName": "contracts/lab4.sol",
       "solcConfig": {
@@ -244,6 +262,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -263,7 +284,7 @@
       ]
     },
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
-      "lastModificationDate": 1680429890107,
+      "lastModificationDate": 1680488208516,
       "contentHash": "f993f8f50186952a59ee5e3a30b68222",
       "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
       "solcConfig": {
@@ -286,6 +307,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
@@ -298,7 +322,7 @@
       ]
     },
     "/home/henry/blockchain_nctu/311551136-bdaf-lab4/contracts/easy_contract.sol": {
-      "lastModificationDate": 1680429279367,
+      "lastModificationDate": 1680488142846,
       "contentHash": "fd7503874d3efc3f237e973fba154358",
       "sourceName": "contracts/easy_contract.sol",
       "solcConfig": {
@@ -321,6 +345,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
